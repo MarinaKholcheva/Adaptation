@@ -1,0 +1,32 @@
+@import "./var/_index.scss";
+
+@import "./mixin/_index.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+  
+}
+@import "./sections/_img-section.scss";
+@import "./sections/_nav-section.scss";

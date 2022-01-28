@@ -1,0 +1,22 @@
+.nav {
+    padding-top: 18px;
+    background-color: aqua;
+ .flex {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ &__ul li {
+     margin-right: 30px;
+  a {
+      text-decoration: unset;
+      @include sub-text;
+      
+  }  
+ }
+ &__ul {
+    list-style-type: none;
+
+ }
+}

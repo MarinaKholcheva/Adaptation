@@ -1,0 +1,8 @@
+@mixin sub-text ($color: #FFFFFF) {
+font-family: $font-DM-S;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 32px;
+color: $color;
+}
