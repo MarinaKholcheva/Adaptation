@@ -75,7 +75,7 @@
 
 .nav {
   padding-top: 18px;
-  background-color: aqua;
+  background-color: blueviolet;
 }
 
 .nav .flex {
@@ -106,5 +106,27 @@
 
 .nav__ul {
   list-style-type: none;
+}
+
+.nav .social-link {
+  width: 48px;
+  height: 48px;
+  mix-blend-mode: normal;
+  border: 1px solid #FFFFFF;
+  opacity: 0.3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 8px;
+}
+
+.nav .social-link a {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 .nav {
     padding-top: 18px;
-    background-color: aqua;
+    background-color: blueviolet;
  .flex {
      display: flex;
      justify-content: space-between;
@@ -17,6 +17,20 @@
  }
  &__ul {
     list-style-type: none;
-
+ }
+ .social-link {
+     width: 48px;
+     height: 48px;
+    mix-blend-mode: normal;
+    border: 1px solid #FFFFFF;
+    opacity: 0.3;
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 8px;
+ }
+ .social-link a {
+     margin: auto;
  }
 }
