@@ -135,4 +135,16 @@
 .nav .social-link a {
   margin: auto;
 }
+
+@media screen and (min-width: 1024px) {
+  .nav .hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav .nav__ul {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
