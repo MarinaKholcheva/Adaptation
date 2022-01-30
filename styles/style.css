@@ -30,6 +30,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 15px);
+  }
+}
+
 .gallery__grid {
   display: -ms-grid;
   display: grid;

@@ -28,5 +28,11 @@
   }
   
 }
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 15px);
+  }
+  
+}
 @import "./sections/_img-section.scss";
 @import "./sections/_nav-section.scss";
