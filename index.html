@@ -21,11 +21,11 @@
     <div class="burger-menu">
       <div class="container">
         <div class="burger-menu__top flex">
-        <a class="logo" href="#"><img src="/img/Logo.svg" alt="" /></a>
-        <div class="burger-menu__close flex">
-          <img src="/img/close.svg" alt="">
+          <a class="logo" href="#"><img src="/img/Logo.svg" alt="" /></a>
+          <div class="burger-menu__close flex">
+            <img src="/img/close.svg" alt="" />
+          </div>
         </div>
-      </div>
         <ul class="burger-menu__ul">
           <li><a href="#"> About</a></li>
           <li><a href="#"> Service</a></li>
@@ -105,18 +105,54 @@
         </div>
       </div>
     </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__block footer__logo">
+          <a href="#"><img src="/img/Logo.svg" alt="" /></a>
+          <p class="footer__text">
+            Passage from the grander poets does one good.
+          </p>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__block-title">Email</h3>
+          <p class="footer__block-info">Support@phot.com</p>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__block-title">Address</h3>
+          <p class="footer__block-info">42 A St, New York, 234, USA</p>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__block-title">Phone</h3>
+          <p class="footer__block-info">1234 (5678) 901-2345</p>
+        </div>
+        <div class="footer__social-block">
+          <div class="social flex">
+            <div class="social-link">
+              <a class="FB" href="#"><img src="/img/FB.svg" alt="" /></a>
+            </div>
+            <div class="social-link">
+              <a href="#"><img src="/img/Tw.svg" alt="" /></a>
+            </div>
+            <div class="social-link">
+              <a href="#"><img src="/img/Inst.svg" alt="" /></a>
+            </div>
+          </div>
+          <p class="footer__bottom-text">Copyright © 2019. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-  <script>
-    const br = document.querySelector('.social-link.hidden');
-    const close = document.querySelector('.burger-menu__close');
+    <script>
+      const br = document.querySelector(".social-link.hidden");
+      const close = document.querySelector(".burger-menu__close");
 
-    br.addEventListener('click', () => {
-      document.querySelector('.burger-menu').classList.add('show');
-    });
+      br.addEventListener("click", () => {
+        document.querySelector(".burger-menu").classList.add("show");
+      });
 
-    close.addEventListener('click', () => {
-      document.querySelector('.burger-menu').classList.remove('show');
-    });
-  </script>
+      close.addEventListener("click", () => {
+        document.querySelector(".burger-menu").classList.remove("show");
+      });
+    </script>
   </body>
 </html>
