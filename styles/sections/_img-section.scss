@@ -23,7 +23,7 @@
   .gallery {
     &__grid {
         grid-template-rows: 192px 192px;
-        grid-template-columns: repeat(4, 192px);
+        grid-template-columns: repeat(4, 1fr);
     }
   }
 }

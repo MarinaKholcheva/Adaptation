@@ -13,8 +13,16 @@
   &--flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     width: 970px;
@@ -28,11 +36,7 @@
   }
   
 }
-@media screen and (max-width: 768px) {
-  .container {
-    width: calc(100% - 15px);
-  }
-  
-}
+
 @import "./sections/_img-section.scss";
 @import "./sections/_nav-section.scss";
+@import "./sections/_burger-menu.scss";

@@ -18,6 +18,23 @@
     />
   </head>
   <body>
+    <div class="burger-menu">
+      <div class="container">
+        <div class="burger-menu__top flex">
+        <a class="logo" href="#"><img src="/img/Logo.svg" alt="" /></a>
+        <div class="burger-menu__close flex">
+          <img src="/img/close.svg" alt="">
+        </div>
+      </div>
+        <ul class="burger-menu__ul">
+          <li><a href="#"> About</a></li>
+          <li><a href="#"> Service</a></li>
+          <li><a href="#"> Projects</a></li>
+          <li><a href="#"> News</a></li>
+          <li><a href="#"> Contact</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="nav">
       <div class="container container--flex">
         <a class="logo" href="#"><img src="/img/Logo.svg" alt="" /></a>
@@ -30,7 +47,7 @@
         </ul>
         <div class="social flex">
           <div class="social-link">
-            <a href="#"><img src="/img/FB.svg" alt="" /></a>
+            <a class="FB" href="#"><img src="/img/FB.svg" alt="" /></a>
           </div>
           <div class="social-link">
             <a href="#"><img src="/img/Tw.svg" alt="" /></a>
@@ -39,7 +56,7 @@
             <a href="#"><img src="/img/Inst.svg" alt="" /></a>
           </div>
           <div class="social-link hidden">
-            <a href="#"><img src="/img/San.svg" alt="" /></a>
+            <img class="img-br" src="/img/San.svg" alt="" />
           </div>
         </div>
       </div>
@@ -89,5 +106,17 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script>
+    const br = document.querySelector('.social-link.hidden');
+    const close = document.querySelector('.burger-menu__close');
+
+    br.addEventListener('click', () => {
+      document.querySelector('.burger-menu').classList.add('show');
+    });
+
+    close.addEventListener('click', () => {
+      document.querySelector('.burger-menu').classList.remove('show');
+    });
+  </script>
   </body>
 </html>
