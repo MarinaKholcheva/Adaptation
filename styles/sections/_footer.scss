@@ -1,0 +1,33 @@
+.footer {
+  &__top {
+    background: #333333;
+    padding-top: 60px;
+    padding-bottom: 86px;
+  }
+
+  &__block {
+    width: calc((100% - (60px * 3) / 4));
+    img {
+      margin-bottom: 10px;
+    }
+    padding-right: 30px;
+  }
+  &__block-title {
+    @include sub-text;
+    margin-bottom: 16px;
+  }
+  &__text {
+    @include sub-text($color: rgba(255, 255, 255, 0.502972));
+  }
+  &__bottom {
+    background: #222222;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .social-link {
+    @include social-link;
+  }
+  &__bottom-text {
+    @include sub-text($color: rgba(255, 255, 255, 0.502972));
+  }
+}

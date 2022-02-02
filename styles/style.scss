@@ -21,6 +21,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &--a-end{
+    align-items: flex-end;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -40,3 +43,4 @@
 @import "./sections/_img-section.scss";
 @import "./sections/_nav-section.scss";
 @import "./sections/_burger-menu.scss";
+@import "./sections/_footer.scss";
