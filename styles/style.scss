@@ -21,8 +21,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &--a-end{
+  &--a-end {
     align-items: flex-end;
+  }
+  &--j-c {
+justify-content: center;
   }
 }
 
@@ -44,3 +47,4 @@
 @import "./sections/_nav-section.scss";
 @import "./sections/_burger-menu.scss";
 @import "./sections/_footer.scss";
+@import "./sections/_rotator.scss";

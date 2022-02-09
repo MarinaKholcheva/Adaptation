@@ -16,6 +16,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
     <div class="burger-menu">
@@ -57,6 +62,41 @@
           </div>
           <div class="social-link hidden">
             <img class="img-br" src="/img/San.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rotator-section">
+      <div class="rotator">
+        <div class="rotator__slide">
+          <img class="rotator__img" src="./img/Rotator-img.jpg" />
+
+          <div class="container">
+            <div class="rotator__text-wrapper">
+              <h3 class="rotator__descrip">Nature</h3>
+              <h2 class="rotator__title">Mesr Desert</h2>
+              <p class="rotator__sub-text">Isfahan Province, Iran</p>
+            </div>
+          </div>
+        </div>
+       <div class="rotator__slide rotator__slide--img2">
+          <h3 class="rotator__descrip">Cities</h3>
+          <h2 class="rotator__title">Kuala-Lumpur</h2>
+          <p class="rotator__sub-text">Malaysia</p>
+        </div>
+        <div class="rotator__slide rotator__slide--img3">
+          <h3 class="rotator__descrip">History</h3>
+          <h2 class="rotator__title">Machu Picchu</h2>
+          <p class="rotator__sub-text">Aguas Calientes, Peru</p>
+        </div>
+      </div>
+      <div class="container container--position">
+        <div class="rotator-section__nav">
+          <div class="rotator-section__prev rotator-section__btn">
+            <img src="/img/Path-prev.svg" alt="" />
+          </div>
+          <div class="rotator-section__next rotator-section__btn">
+            <img src="/img/Path-next.svg" alt="" />
           </div>
         </div>
       </div>
@@ -108,32 +148,34 @@
     <div class="footer">
       <div class="footer__top">
         <div class="container">
-          <div class="footer__info-block flex flex--a-end">
+          <div class="footer__info-block grid">
             <div class="footer__block footer__logo">
               <a href="#"><img src="/img/Logo.svg" alt="" /></a>
               <p class="footer__text">
                 Passage from the grander poets does one good.
               </p>
             </div>
-            <div class="footer__block">
+            <div class="footer__block footer__email">
               <h3 class="footer__block-title">Email</h3>
               <p class="footer__text">Support@phot.com</p>
             </div>
-            <div class="footer__block">
+            <div class="footer__block footer__address">
               <h3 class="footer__block-title">Address</h3>
               <p class="footer__text">42 A St, New York, 234, USA</p>
             </div>
-            <div class="footer__block">
+            <div class="footer__block footer__phone">
               <h3 class="footer__block-title">Phone</h3>
-              <p class="footer__text">1234 (5678) 901-2345</p>
+              <a class="footer__text" href="tel:+123456789012345"
+                >1234 (5678) 901-2345</a
+              >
             </div>
           </div>
         </div>
       </div>
       <div class="footer__bottom">
         <div class="container">
-          <div class="footer__social-block flex">
-            <div class="social flex">
+          <div class="footer__social-block">
+            <div class="social flex flex--j-c">
               <div class="social-link">
                 <a class="FB" href="#"><img src="/img/FB.svg" alt="" /></a>
               </div>
@@ -164,6 +206,21 @@
       close.addEventListener("click", () => {
         document.querySelector(".burger-menu").classList.remove("show");
       });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(".rotator").slick({
+        arrows: false,
+      });
+      $(".rotator-section__prev.rotator-section__btn").slick("slickPrev");
     </script>
   </body>
 </html>
