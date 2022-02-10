@@ -1,0 +1,140 @@
+.how {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__section-left {
+    width: 470px;
+  }
+  &__work {
+    @include mini-title;
+    margin-bottom: 21px;
+  }
+  &__title {
+    font-family: $font-DM-S;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 64px;
+    color: #333333;
+    margin-bottom: 50px;
+  }
+  &__active-block {
+    width: 140px;
+    height: 208px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    margin-right: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  &__active-block:hover {
+    background: #ffffff;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 92px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
+  &__icon:hover {
+    background: #f7f7f7;
+  }
+  &__link {
+    text-decoration: unset;
+    font-family: $font-DM-S;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(51, 51, 51, 0.50133);
+  }
+
+  &__section-right {
+    width: 570px;
+    background: #f7f7f7;
+    border-radius: 16px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 48px;
+    padding-top: 32px;
+    margin-left: 130px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .deco {
+    position: absolute;
+    width: 176px;
+    height: 176px;
+    top: -24px;
+    right: -68px;
+    z-index: -1;
+  }
+
+  &__img-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__01 {
+    margin-top: 15px;
+    width: 76px;
+    height: 80px;
+  }
+  &__title-right {
+    font-family: $font-DM-S;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #333333;
+    margin-top: -22px;
+    margin-bottom: 16px;
+  }
+  &__sub-text {
+    @include sub-text($color: rgba(51, 51, 51, 0.501557));
+  }
+}
+@media screen and (max-width: 1200px) {
+  .how {
+    &__section-right {
+      width: 425px;
+      margin-left: 74px;
+      padding-left: 36px;
+      padding-right: 36px;
+      padding-bottom: 67px;
+      padding-top: 43px;
+    }
+    &__img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .how {
+    .container {
+      display: block;
+    }
+
+    &__img-block {
+      display: block;
+    }
+    &__active-block {
+      width: 220px;
+      height: 200px;
+      padding: 30px, 40px, 30px, 40px;
+    }
+  }
+}
