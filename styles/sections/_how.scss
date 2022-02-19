@@ -31,10 +31,17 @@
     margin-right: 25px;
     padding-left: 24px;
     padding-right: 24px;
+    &:hover {
+      background: #ffffff;
+      box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+    }
   }
-  &__active-block:hover {
+  &__active-block:hover & {
     background: #ffffff;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+    &__icon {
+      background: #f7f7f7;
+    }
   }
   &__icon {
     display: flex;
@@ -47,9 +54,7 @@
     margin-top: 24px;
     margin-bottom: 20px;
   }
-  &__icon:hover {
-    background: #f7f7f7;
-  }
+
   &__link {
     text-decoration: unset;
     font-family: $font-DM-S;
@@ -70,7 +75,6 @@
     padding-top: 32px;
     margin-left: 130px;
     position: relative;
-    z-index: 0;
   }
 
   .deco {
@@ -108,6 +112,9 @@
 }
 @media screen and (max-width: 1200px) {
   .how {
+    overflow: hidden;
+    padding-top: 140px;
+    padding-bottom: 140px;
     &__section-right {
       width: 425px;
       margin-left: 74px;
@@ -117,24 +124,98 @@
       padding-top: 43px;
     }
     &__img {
-      width: 200px;
+      width: 220px;
       height: 200px;
+    }
+    &__title-right {
+      font-size: 24px;
+      line-height: 34px;
     }
   }
 }
 @media screen and (max-width: 768px) {
   .how {
+    padding-top: 70px;
+    padding-bottom: 50px;
     .container {
       display: block;
     }
-
-    &__img-block {
-      display: block;
+    &__section-left {
+      width: 100%;
+    }
+    &__title {
+      margin-bottom: 67px;
     }
     &__active-block {
-      width: 220px;
-      height: 200px;
-      padding: 30px, 40px, 30px, 40px;
+      width: calc((100% - 40px * 2) / 3);
+      padding: 30px 40px 30px 40px;
+      margin-right: 20px;
+      &--m-un {
+        margin-right: unset;
+      }
+      text-align: center;
+    }
+    &__icon {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__section-right {
+      padding: 32px 47px 32px 47px;
+      width: 100%;
+      margin-top: 50px;
+      margin-left: unset;
+    }
+    &__img-block {
+      display: block;
+      img {
+        display: block;
+      }
+    }
+    &__img {
+      width: 250px;
+      height: 250px;
+    }
+    &__title-right {
+      font-size: 40px;
+      line-height: 48px;
+      margin-top: 0px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .how {
+    &__work {
+      margin-bottom: 18px;
+    }
+    &__title {
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 54px;
+    }
+    &__active-section {
+      overflow: scroll;
+      margin-bottom: 80px;
+    }
+    &__img {
+      width: 288px;
+      height: 288px;
+      margin-bottom: 24px;
+      margin-top: -63px;
+      position: relative;
+      z-index: 0;
+    }
+    &__01 {
+      position: relative;
+      z-index: 1;
+    }
+    &__title-right {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 18px;
+    }
+    &__section-right {
+      padding-right: 28px;
+      box-sizing: border-box;
     }
   }
 }
