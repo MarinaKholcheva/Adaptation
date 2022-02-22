@@ -1,6 +1,9 @@
 .nav {
   padding-top: 18px;
-  background-color: blueviolet;
+  position: absolute;
+  top: 18px;
+  left: 130px;
+  z-index: 5;
 
   .flex {
     display: flex;

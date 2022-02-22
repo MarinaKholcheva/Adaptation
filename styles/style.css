@@ -102,7 +102,10 @@
 
 .nav {
   padding-top: 18px;
-  background-color: blueviolet;
+  position: absolute;
+  top: 18px;
+  left: 130px;
+  z-index: 5;
 }
 
 .nav .flex {
@@ -767,6 +770,129 @@
     padding-right: 28px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+}
+
+.header {
+  background-image: url(/img/Header-main.jpg);
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 880px;
+  position: relative;
+  padding-top: 239px;
+}
+
+.header__title {
+  font-family: Mrs Sheppards;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 250px;
+  line-height: 334px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 10px 10px rgba(29, 68, 159, 0.2);
+}
+
+.header__deco {
+  position: absolute;
+  width: 176px;
+  height: 176px;
+  top: 303px;
+  left: 632px;
+}
+
+.header__arrow {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background: #ffffff;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  bottom: 48px;
+  left: 0;
+  right: 0;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.header__arrow img {
+  margin: auto;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 50px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 50px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding-top: 296px;
+  }
+  .header__title {
+    font-size: 215px;
+    line-height: 287px;
+  }
+  .header__deco {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding-top: 333px;
+  }
+  .header__title {
+    font-size: 160px;
+    line-height: 214px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 417px;
+  }
+  .header__title {
+    font-size: 100px;
+    line-height: 120px;
   }
 }
 /*# sourceMappingURL=style.css.map */

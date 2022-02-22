@@ -17,7 +17,6 @@
       href="https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
@@ -27,6 +26,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
     <div class="burger-menu">
@@ -294,7 +294,14 @@
       $(".rotator").slick({
         arrows: false,
       });
-      $(".rotator-section__prev.rotator-section__btn").slick("slickPrev");
+      console.log($(".rotator-section__btn"))
+      $('div.rotator-section__prev.rotator-section__btn').click(function(){
+        $(".rotator").slick("slickPrev");
+      });
+      $('div.rotator-section__next.rotator-section__btn').click(function(){
+        $(".rotator").slick("slickNext");
+      });
+      
     </script>
   </body>
 </html>
