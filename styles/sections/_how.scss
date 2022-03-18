@@ -1,0 +1,221 @@
+.how {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__section-left {
+    width: 470px;
+  }
+  &__work {
+    @include mini-title;
+    margin-bottom: 21px;
+  }
+  &__title {
+    font-family: $font-DM-S;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 64px;
+    color: #333333;
+    margin-bottom: 50px;
+  }
+  &__active-block {
+    width: 140px;
+    height: 208px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    margin-right: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
+    &:hover {
+      background: #ffffff;
+      box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+    }
+  }
+  &__active-block:hover & {
+    background: #ffffff;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+    &__icon {
+      background: #f7f7f7;
+    }
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 92px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    text-decoration: unset;
+    font-family: $font-DM-S;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(51, 51, 51, 0.50133);
+  }
+
+  &__section-right {
+    width: 570px;
+    background: #f7f7f7;
+    border-radius: 16px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 48px;
+    padding-top: 32px;
+    margin-left: 130px;
+    position: relative;
+  }
+
+  .deco {
+    position: absolute;
+    width: 176px;
+    height: 176px;
+    top: -24px;
+    right: -68px;
+    z-index: -1;
+  }
+
+  &__img-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__01 {
+    margin-top: 15px;
+    width: 76px;
+    height: 80px;
+  }
+  &__title-right {
+    font-family: $font-DM-S;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #333333;
+    margin-top: -22px;
+    margin-bottom: 16px;
+  }
+  &__sub-text {
+    @include sub-text($color: rgba(51, 51, 51, 0.501557));
+  }
+}
+@media screen and (max-width: 1200px) {
+  .how {
+    overflow: hidden;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    &__section-right {
+      width: 425px;
+      margin-left: 74px;
+      padding-left: 36px;
+      padding-right: 36px;
+      padding-bottom: 67px;
+      padding-top: 43px;
+    }
+    &__img {
+      width: 220px;
+      height: 200px;
+    }
+    &__title-right {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .how {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    .container {
+      display: block;
+    }
+    &__section-left {
+      width: 100%;
+    }
+    &__title {
+      margin-bottom: 67px;
+    }
+    &__active-block {
+      width: calc((100% - 40px * 2) / 3);
+      padding: 30px 40px 30px 40px;
+      margin-right: 20px;
+      &--m-un {
+        margin-right: unset;
+      }
+      text-align: center;
+    }
+    &__icon {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__section-right {
+      padding: 32px 47px 32px 47px;
+      width: 100%;
+      margin-top: 50px;
+      margin-left: unset;
+    }
+    &__img-block {
+      display: block;
+      img {
+        display: block;
+      }
+    }
+    &__img {
+      width: 250px;
+      height: 250px;
+    }
+    &__title-right {
+      font-size: 40px;
+      line-height: 48px;
+      margin-top: 0px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .how {
+    &__work {
+      margin-bottom: 18px;
+    }
+    &__title {
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 54px;
+    }
+    &__active-section {
+      overflow: scroll;
+      margin-bottom: 80px;
+    }
+    &__img {
+      width: 288px;
+      height: 288px;
+      margin-bottom: 24px;
+      margin-top: -63px;
+      position: relative;
+      z-index: 0;
+    }
+    &__01 {
+      position: relative;
+      z-index: 1;
+    }
+    &__title-right {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 18px;
+    }
+    &__section-right {
+      padding-right: 28px;
+      box-sizing: border-box;
+    }
+  }
+}

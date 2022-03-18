@@ -1,0 +1,98 @@
+.footer {
+  &__top {
+    background: #333333;
+    padding-top: 60px;
+    padding-bottom: 86px;
+  }
+  &__social-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+&__logo {
+  padding-right: 30px;
+}
+  &__block {
+    
+    img {
+      margin-bottom: 10px;
+    }
+    
+  }
+  &__block-title {
+    @include sub-text;
+    margin-bottom: 16px;
+  }
+  &__text {
+    @include sub-text($color: rgba(255, 255, 255, 0.502972));
+  }
+  &__bottom {
+    background: #222222;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .social-link {
+    @include social-link ($margin-left: 0px);
+    margin-right: 8px;
+  }
+  &__bottom-text {
+    @include sub-text($color: rgba(255, 255, 255, 0.502972));
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    .grid {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr); 
+      grid-row-gap: 55px;
+      grid-column-gap: 15px;
+      grid-template-areas: "logo logo logo"
+      "email address phone";
+  }
+  &__logo {
+    grid-area: logo;
+  }
+  &__email {
+    grid-area: email;
+  }
+  &__address {
+    grid-area: address;
+  }
+  &__phone {
+    grid-area: phone;
+  }
+
+}
+}  
+@media screen and (max-width: 768px) {
+  .footer {
+    .grid {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: 1fr;
+      grid-row-gap: 35px;
+      grid-template-areas: "logo"
+      "email"
+      "address"
+      "phone";
+    }
+    &__social-block {
+      display: block;
+    }
+    &__bottom-text {
+      text-align: center;
+      margin-top: 26px;
+    }
+  }
+  
+}
+
+

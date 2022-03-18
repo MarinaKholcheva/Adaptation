@@ -1,0 +1,89 @@
+.header {
+  background-image: url(/img/Header-main.jpg);
+  background-size: cover;
+  box-sizing: border-box;
+  min-height: 880px;
+  position: relative;
+  padding-top: 239px;
+  &__title {
+    font-family: Mrs Sheppards;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 250px;
+    line-height: 334px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 10px 10px rgba(29, 68, 159, 0.2);
+  }
+  &__deco {
+    position: absolute;
+    width: 176px;
+    height: 176px;
+    top: 303px;
+    left: 632px;
+  }
+  &__arrow {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    bottom: 48px;
+    left: 0;
+    right: 0;
+    img {
+      margin: auto;
+      transform: rotate(90deg);
+    }
+    animation-name: bounce;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+}
+@keyframes bounce {
+  0% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 50px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header {
+    padding-top: 296px;
+    &__title {
+      font-size: 215px;
+      line-height: 287px;
+    }
+    &__deco {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    padding-top: 333px;
+    &__title {
+      font-size: 160px;
+      line-height: 214px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 417px;
+    &__title {
+      font-size: 100px;
+      line-height: 120px;
+    }
+  }
+}
